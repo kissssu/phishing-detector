@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phishing Detection v1</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Phishing Detection v1</h1>
+    <div id="container">
+        <textarea id="email_content" placeholder="Paste your email here..." rows="10" cols="80" oninput="adjustTextareaHeight()"></textarea><br />
+        <button type="button" id="scanButton">Analyze email content for phishing attempts.</button>
+    </div>
+    <div id="loading">Scanning...</div>
+    <div id="result"></div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

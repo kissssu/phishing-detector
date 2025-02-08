@@ -1,0 +1,188 @@
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    color: #2c3e50;
+}
+
+#container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    margin-top: 30px;
+    width: 70%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #bdc3c7;
+    border-radius: 8px;
+    box-sizing: border-box;
+    resize: vertical;
+    min-height: 150px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    /* Center the button within the container */
+    margin-left: auto;
+    margin-right: auto;
+    display: block; /* Makes margin: auto work correctly */
+}
+
+button:hover {
+    background-color: #111;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: default;
+}
+
+#result {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background-color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    width: fit-content; /* Key change: Fit content */
+    max-width: 100%; /* Prevent overflow of container */
+    box-sizing: border-box; /* Include padding and border in width */
+    margin: 30px auto 0; /* Top margin, auto left/right for centering */
+}
+
+.analysis-item {
+    margin-bottom: 10px;
+}
+
+.analysis-label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.url-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.url-list li {
+    margin-bottom: 5px;
+}
+
+.url-list a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.url-list a:hover {
+    text-decoration: underline;
+}
+
+.verdict-red {
+    color: #e74c3c;
+}
+
+.verdict-orange {
+    color: #f39c12;
+}
+
+.verdict-yellow {
+    color: #f2c029;
+}
+
+.verdict-blue {
+    color: #3498db;
+}
+
+.verdict-green {
+    color: #27ae60;
+}
+
+.error {
+    color: #e74c3c;
+}
+
+#loading {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+    color: #7f8c8d;
+}
+
+/* Added some subtle hover effects and transitions */
+button {
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+button:hover {
+    background-color: #111;
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
+}
+
+#container {
+    margin: 30px auto;
+}
+
+#container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+/* Responsive adjustments (example) */
+@media (max-width: 768px) {
+    #container {
+        width: 90%; /* Make container wider on smaller screens */
+        padding: 20px;
+    }
+
+    textarea {
+        font-size: 14px; /* Smaller font size on smaller screens */
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    #result {
+        font-size: 14px;
+    }
+}
+/* Center button within the container */
+button {
+    margin-left: auto; /* Push button to the right edge */
+    margin-right: auto; /* Cancel out the effect of margin-left: auto */
+    display: block; /* Makes margin: auto work correctly */
+}

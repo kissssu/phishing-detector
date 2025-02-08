@@ -1,0 +1,53 @@
+Scam:
+        ```
+        To: victim_email@example.com
+        From: "Your Bank" <bank_security@very-suspicious-domain.com>
+        Subject: Urgent: Account Security Alert - Suspicious Activity
+
+        Body:
+
+        Dear Valued Customer,
+
+        We have detected unusual activity on your account.  For your protection, we have temporarily suspended your online access.
+
+        To restore your access, please verify your account details immediately by clicking on the following link: [malicious_link_here.com/verify]
+
+        Failure to verify your account within 24 hours will result in permanent account closure.
+
+        We apologize for any inconvenience this may cause.
+
+        Sincerely,
+        The "Your Bank" Security Team
+        ```
+
+Legit:
+        ```
+        To: victim_email@example.com
+        From: support@legit-company.com
+        Subject: Your Recent Order Confirmation - Order #12345
+
+        Body:
+
+        Dear [Victim's Name],
+        Thank you for your recent order from Legit Company!  This email confirms your purchase.
+
+        Order Number: #12345
+        Order Date: October 26, 2023
+        Shipping Address:
+        [Victim's Address]
+
+        Items Ordered:
+        - Product A x 1
+        - Product B x 2
+
+        Total: $XX.XX
+
+        You can view your order details and track your shipment here: [legit_company.com/order/12345]
+
+        If you have any questions, please don't hesitate to contact us at support@legit-company.com or call us at 1-800-LEGIT-CO.
+
+        Thank you for your business!
+
+        Sincerely,
+        The Legit Company Team
+        ```
