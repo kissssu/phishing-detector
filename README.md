@@ -10,6 +10,7 @@ This project implements a phishing email detection tool using Python with Flask 
 - [Usage](#usage)
 - [Project Structure](#project-structure)
 - [Future Enhancements](#future-enhancements)
+- [Screenshots](#Screenshots)
 - [Contributing](#contributing)
 
 ## Introduction
@@ -86,6 +87,11 @@ phishing-email-detector/
 
 *   Natural Language Processing (NLP) for content analysis.
 *   AI/ML integration for improved accuracy and adaptive learning.
+
+## **Screenshots**
+
+![Screenshot Legit Email Detected](https://github.com/kissssu/phishing-detector/blob/master/Screenshots/phishing-detection-legit.png)
+![Screenshot Legit Email Detected](https://github.com/kissssu/phishing-detector/blob/master/Screenshots/phishing-detection-scan.png)
 
 ## Contributing
 
